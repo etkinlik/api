@@ -1,6 +1,4 @@
-<?php
-
-namespace Etkinlik\Model\Temel;
+<?php namespace EtkinlikApi\Model\Temel;
 
 /**
  * Created by PhpStorm.
@@ -8,9 +6,8 @@ namespace Etkinlik\Model\Temel;
  * Date: 11/2/14
  * Time: 11:58 AM
  */
-
-class Mekan {
-
+class Mekan
+{
 	public $id;
 	public $adi;
 	public $radi;
@@ -30,8 +27,8 @@ class Mekan {
 	/**
 	 * @param object $mekan
 	 */
-	public function __construct($mekan) {
-
+	public function __construct($mekan)
+	{
 		$this->id = $mekan->id;
 
 		$this->adi = $mekan->adi;

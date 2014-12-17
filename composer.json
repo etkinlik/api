@@ -16,8 +16,8 @@
 		"nategood/httpful": "0.2.17"
     },
     "autoload": {
-		"classmap": [
-			"src/"
-		]
+        "psr-4": {
+            "EtkinlikApi\\": "src/EtkinlikApi"
+        }
     }
 }

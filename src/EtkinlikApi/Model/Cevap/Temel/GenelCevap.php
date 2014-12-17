@@ -1,6 +1,4 @@
-<?php
-
-namespace Etkinlik\Model\Cevap\Temel;
+<?php namespace EtkinlikApi\Model\Cevap\Temel;
 
 /**
  * Created by PhpStorm.
@@ -8,15 +6,24 @@ namespace Etkinlik\Model\Cevap\Temel;
  * Date: 11/2/14
  * Time: 11:53 AM
  */
-
-abstract class Genel {
-
+abstract class GenelCevap
+{
 	/**
 	 * 1 ise işlem başarılı demektir.
 	 * 0 ise işlem başarısız demektir. Bu durumda mesaj içeriğinde hata bilgisi yer alır.
 	 *
-	 * @var tinyint(1)
+	 * @var int
 	 */
 	public $sonuc;
 	public $mesaj;
+
+	/**
+	 * Sonuç başarılı ise true değilse false.
+	 *
+	 * @return bool
+	 */
+	public function isSonucBasarili()
+	{
+		return $this->sonuc == 1;
+	}
 }

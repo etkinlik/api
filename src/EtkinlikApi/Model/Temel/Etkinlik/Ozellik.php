@@ -1,6 +1,4 @@
-<?php
-
-namespace Etkinlik\Model\Temel\Etkinlik;
+<?php namespace EtkinlikApi\Model\Temel\Etkinlik;
 
 /**
  * Created by PhpStorm.
@@ -8,9 +6,8 @@ namespace Etkinlik\Model\Temel\Etkinlik;
  * Date: 11/2/14
  * Time: 12:04 PM
  */
-
-class Ozellik {
-
+class Ozellik
+{
 	public $telefon;
 	public $mail;
 	public $facebook;
@@ -24,8 +21,8 @@ class Ozellik {
 	/**
 	 * @param object $ozellik
 	 */
-	public function __construct($ozellik) {
-
+	public function __construct($ozellik)
+	{
 		$this->telefon = $ozellik->telefon;
 		$this->mail = $ozellik->mail;
 		$this->facebook = $ozellik->facebook;

@@ -1,12 +1,10 @@
-<?php
+<?php namespace EtkinlikApi\Model\Cevap\Etkinlik;
 
-namespace Etkinlik\Model\Cevap\Etkinlik\Son_guncellenen;
-
-use Etkinlik\Model\Temel\Etkinlik\Ozellik;
-use Etkinlik\Model\Temel\Kategori;
-use Etkinlik\Model\Temel\Konu;
-use Etkinlik\Model\Temel\Mekan;
-use Etkinlik\Model\Temel\Tur;
+use EtkinlikApi\Model\Temel\Etkinlik\Ozellik;
+use EtkinlikApi\Model\Temel\Kategori;
+use EtkinlikApi\Model\Temel\Konu;
+use EtkinlikApi\Model\Temel\Mekan;
+use EtkinlikApi\Model\Temel\Tur;
 
 /**
  * Created by PhpStorm.
@@ -14,9 +12,8 @@ use Etkinlik\Model\Temel\Tur;
  * Date: 11/2/14
  * Time: 11:57 AM
  */
-
-class Kayit {
-
+class SonGuncellenenKayitCevap
+{
 	public $id;
 	public $adi;
 	public $radi;
