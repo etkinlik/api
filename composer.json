@@ -4,7 +4,7 @@
     "homepage": "https://github.com/etkinlik/api",
     "license": "MIT",
     "keywords": ["etkinlik", "api", "requests"],
-    "version": "0.0.1",
+    "version": "0.2.1",
     "authors": [
         {
             "name": "İrfan Evrens",
