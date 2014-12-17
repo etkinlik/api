@@ -17,7 +17,7 @@ class SonGuncellenenler
 	public static function get($sonGuncellenenIstek)
 	{
 		/** @var Response $sonuc */
-		$sonuc = Request::post('http://localhost/etkinlik/api/v1/etkinlik/son_guncellenenler', $sonGuncellenenIstek->getArray())
+		$sonuc = Request::post('http://www.etkinlik.com.tr/api/v1/etkinlik/son_guncellenenler', $sonGuncellenenIstek->getArray())
 			->sendsType('form')
 			->expectsType('json')
 			->send();
