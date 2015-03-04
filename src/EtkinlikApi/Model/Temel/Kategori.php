@@ -13,7 +13,7 @@ class Kategori
 
 	public function __construct($id, $adi)
 	{
-		$this->id;
-		$this->adi;
+		$this->id = $id;
+		$this->adi = $adi;
 	}
 }
