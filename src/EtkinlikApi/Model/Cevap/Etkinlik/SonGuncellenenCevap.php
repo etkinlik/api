@@ -7,13 +7,6 @@ use EtkinlikApi\Model\Temel\Konu;
 use EtkinlikApi\Model\Temel\Mekan;
 use EtkinlikApi\Model\Temel\Tur;
 
-/**
- * Created by PhpStorm.
- * User: irfan
- * Date: 11/2/14
- * Time: 11:52 AM
- */
-
 class SonGuncellenenCevap extends GenelCevap
 {
 	/**
@@ -39,6 +32,7 @@ class SonGuncellenenCevap extends GenelCevap
 			$yeniKayit->bitis_zamani = $kayit->bitis_zamani;
 			$yeniKayit->icerik = $kayit->icerik;
 			$yeniKayit->is_ucretli = $kayit->is_ucretli;
+			$yeniKayit->son_guncellenme_zamani = $kayit->son_guncellenme_zamani;
 
 			// mekan bilgisini set edelim
 			$yeniKayit->mekan = new Mekan($kayit->mekan);

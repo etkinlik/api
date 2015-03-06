@@ -21,6 +21,7 @@ class SonGuncellenenKayitCevap
 	public $baslangic_zamani;
 	public $bitis_zamani;
 	public $is_ucretli;
+	public $son_guncellenme_zamani;
 
 	/**
 	 * @var Mekan
