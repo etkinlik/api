@@ -12,6 +12,10 @@ class Mekan
 	public $adi;
 	public $radi;
 	public $adresi;
+
+	public $harita_latitude;
+	public $harita_longitude;
+
 	public $tel;
 	public $websitesi;
 	public $facebook;
@@ -34,6 +38,9 @@ class Mekan
 		$this->adi = $mekan->adi;
 		$this->radi = $mekan->radi;
 		$this->adresi = $mekan->adresi;
+
+		$this->harita_latitude = $mekan->harita_latitude;
+		$this->harita_longitude = $mekan->harita_longitude;
 
 		$this->tel = $mekan->tel;
 		$this->websitesi = $mekan->websitesi;
