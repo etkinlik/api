@@ -17,6 +17,7 @@ class Ozellik
 	public $canliyayin;
 	public $android;
 	public $ios;
+	public $bilet_kayit_link;
 
 	/**
 	 * @param object $ozellik
@@ -32,5 +33,6 @@ class Ozellik
 		$this->canliyayin = $ozellik->canliyayin;
 		$this->android = $ozellik->android;
 		$this->ios = $ozellik->ios;
+		$this->bilet_kayit_link = $ozellik->bilet_kayit_link;
 	}
 }
