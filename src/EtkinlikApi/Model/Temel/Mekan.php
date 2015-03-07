@@ -1,11 +1,5 @@
 <?php namespace EtkinlikApi\Model\Temel;
 
-/**
- * Created by PhpStorm.
- * User: irfan
- * Date: 11/2/14
- * Time: 11:58 AM
- */
 class Mekan
 {
 	public $id;
@@ -33,28 +27,31 @@ class Mekan
 	 */
 	public function __construct($mekan)
 	{
-		$this->id = $mekan->id;
+		if ( ! empty($mekan->id)) {
 
-		$this->adi = $mekan->adi;
-		$this->radi = $mekan->radi;
-		$this->adresi = $mekan->adresi;
+			$this->id = $mekan->id;
 
-		$this->harita_latitude = $mekan->harita_latitude;
-		$this->harita_longitude = $mekan->harita_longitude;
+			$this->adi = $mekan->adi;
+			$this->radi = $mekan->radi;
+			$this->adresi = $mekan->adresi;
 
-		$this->tel = $mekan->tel;
-		$this->websitesi = $mekan->websitesi;
-		$this->facebook = $mekan->facebook;
-		$this->twitter = $mekan->twitter;
+			$this->harita_latitude = $mekan->harita_latitude;
+			$this->harita_longitude = $mekan->harita_longitude;
 
-		$this->semt_id = $mekan->semt_id;
-		$this->semt_adi = $mekan->semt_adi;
+			$this->tel = $mekan->tel;
+			$this->websitesi = $mekan->websitesi;
+			$this->facebook = $mekan->facebook;
+			$this->twitter = $mekan->twitter;
 
-		$this->ilce_id = $mekan->ilce_id;
-		$this->ilce_adi = $mekan->ilce_adi;
+			$this->semt_id = $mekan->semt_id;
+			$this->semt_adi = $mekan->semt_adi;
 
-		$this->sehir_id = $mekan->sehir_id;
-		$this->sehir_adi = $mekan->sehir_adi;
-		$this->sehir_radi = $mekan->sehir_radi;
+			$this->ilce_id = $mekan->ilce_id;
+			$this->ilce_adi = $mekan->ilce_adi;
+
+			$this->sehir_id = $mekan->sehir_id;
+			$this->sehir_adi = $mekan->sehir_adi;
+			$this->sehir_radi = $mekan->sehir_radi;
+		}
 	}
 }
