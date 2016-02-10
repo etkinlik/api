@@ -1,7 +1,7 @@
 {
-    "name": "etkinlik/api",
+    "name": "etkinlikcomtr/api",
     "description": "Etkinlik.com.tr'nin PHP api kütüphanesidir.",
-    "homepage": "https://github.com/etkinlik/api",
+    "homepage": "https://github.com/etkinlikcomtr/api",
     "license": "MIT",
     "keywords": ["etkinlik", "api", "requests"],
     "version": "0.2.1",
